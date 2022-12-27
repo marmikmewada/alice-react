@@ -1,10 +1,96 @@
 .MainContent{
-    padding: 2rem;
+    padding: 3rem 10rem;
     /* height: 50vh; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
     gap: 1rem;
+   
+}
+/* first div starts  */
+.MainContent>div:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 4rem 1fr 10rem;
 }
 
+    .MainContent>div:nth-child(1)>div{
+    grid-row: 2/3;
+    }
+    /* first divs inside one div ends  */
+/* first div ends  */
+
+/* second div starts  */
+.MainContent>div:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1.3fr 2fr;
+    gap: 1rem;
+    
+}
+    .MainContent>div:nth-child(2)>div:nth-child(1){
+        grid-row: 1/2;
+    }
+    /* second divs first div ends  */
+    .MainContent>div:nth-child(2)>div:nth-child(2){
+        grid-row: 2/3;
+    }
+    /* second divs second div ends  */
+/* second div ends  */
+
+/* third div starts  */
+.MainContent>div:nth-child(3){
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 5rem 1fr 1fr;
+}
+    .MainContent>div:nth-child(3)>div:nth-child(1){
+        grid-row: 2/3;
+    }
+    /* third divs first div ends  */
+    .MainContent>div:nth-child(3)>div:nth-child(2){
+        grid-row: 3/4;
+    }
+    /* third divs second div ends  */
+/* third div ends  */
+
+/* fourth div starts  */
+.MainContent>div:nth-child(4){
+    grid-column: 4/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 5rem;
+}   
+   
+/* fourth div ends  */
+/* fifth div starts  */
+.MainContent>div:nth-child(5){
+    grid-column: 5/6;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 5rem 1fr 1fr;
+}
+.MainContent>div:nth-child(5)>div:nth-child(1){
+    grid-row: 2/3;
+}
+/* fifth divs first div ends  */
+.MainContent>div:nth-child(5)>div:nth-child(2){
+    grid-row: 3/4;
+}
+/* fifth divs second div ends  */
+/* fifth div ends  */
+.MainContent>div>div>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    filter: brightness(50%);
+}
+
+.MainContent>div{
+    gap: 1rem;
+    /* border-radius: 2rem; */
+    /* padding: 1rem; */
+}

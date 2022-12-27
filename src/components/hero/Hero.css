@@ -1,0 +1,6 @@
+.Hero{
+    padding: 0 5rem;
+}
+.Hero>p{
+    width: 30%;
+}
